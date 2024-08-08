@@ -27,6 +27,5 @@ jobs:
         with:
           push: true
           tags: awfixer/axyl-gpb:nightly
-          context: ./axyl-gpb/yagpdb_docker
-          file: ./axyl-gpb/yagpdb_docker/Dockerfile
-
+          context: ./yagpdb_docker
+          file: ./yagpdb_docker/Dockerfile
