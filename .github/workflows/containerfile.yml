@@ -5,7 +5,6 @@ on:
   schedule:
      - cron:  '0 0 */1 * *'
 
-
 jobs:
   docker-publish:
     runs-on: ubuntu-latest
@@ -28,3 +27,6 @@ jobs:
         with:
           push: true
           tags: awfixer/axyl-gpb:nightly
+          context: ./axyl-gpb/yagpdb-docker
+          file: ./axyl-gpb/yagpdb-docker/Dockerfile
+
